@@ -64,7 +64,7 @@ ncats@hq.dhs.gov
 
     HtmlBody = '''<html>
 <head></head>
-<body>  
+<body>
 <div style=""font-size:14.5"">
 <p>Greetings {{acronym}},</p>
 <p>Attached is your <b>Trustworthy Email Report</b>. This report presents your organization's use of SPF, DMARC, and STARTTLS, as discovered at your .gov domains. The data in this report comes from a <b>scan that took place on {{report_date}}.</b></p>
