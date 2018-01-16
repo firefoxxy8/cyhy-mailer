@@ -486,13 +486,13 @@ def do_report(db, mail_server, cyhy_report_dir, tmail_report_dir, https_report_d
     if cybex_report_dir:
         cybex_report_glob = '{}/Federal_Cyber_Exposure_Scorecard-*.pdf'.format(cybex_report_dir)
         cybex_report_filenames = glob.glob(cybex_report_glob)
-        cybex_critical_open_csv_glob = '{}/cybex_open_tickets_critical_*.csv'.format(cybex_report_dir)
+        cybex_critical_open_csv_glob = '{}/critical-open.csv'.format(cybex_report_dir)
         cybex_critical_open_csv_filenames = glob.glob(cybex_critical_open_csv_glob)
-        cybex_critical_closed_csv_glob = '{}/cybex_closed_tickets_critical_*.csv'.format(cybex_report_dir)
+        cybex_critical_closed_csv_glob = '{}/critical-closed.csv'.format(cybex_report_dir)
         cybex_critical_closed_csv_filenames = glob.glob(cybex_critical_closed_csv_glob)
-        cybex_high_open_csv_glob = '{}/cybex_open_tickets_high_*.csv'.format(cybex_report_dir)
+        cybex_high_open_csv_glob = '{}/high-open.csv'.format(cybex_report_dir)
         cybex_high_open_csv_filenames = glob.glob(cybex_high_open_csv_glob)
-        cybex_high_closed_csv_glob = '{}/cybex_closed_tickets_high_*.csv'.format(cybex_report_dir)
+        cybex_high_closed_csv_glob = '{}/high-closed.csv'.format(cybex_report_dir)
         cybex_high_closed_csv_filenames = glob.glob(cybex_high_closed_csv_glob)
 
         # At most one Cybex report and CSV should match
